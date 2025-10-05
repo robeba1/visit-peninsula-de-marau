@@ -2,172 +2,100 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Visit Península de Maraú</title>
+  <title>Visit Península de Maraú — Em construção</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Estamos preparando uma revolução no turismo e nos negócios da Península de Maraú.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg: #0b1f2a;
+      --accent: #00b894;
+      --text: #eaf2f8;
+      --muted: #9fb3c8;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
     body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f5f5f5;
-      color: #333;
-    }
-    header {
-      background: url('banner-marau.jpg') center/cover no-repeat;
-      color: white;
-      text-align: center;
-      padding: 80px 20px;
-    }
-    header h1 {
-      font-size: 3em;
       margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: radial-gradient(1200px 600px at 70% 10%, #12364a, var(--bg));
+      display: grid;
+      place-items: center;
+      padding: 24px;
     }
-    header p {
-      font-size: 1.2em;
-    }
-    nav {
-      background: #00695c;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    section h2 {
-      color: #00695c;
-      margin-bottom: 20px;
-    }
-    .formulario {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .formulario label {
-      display: block;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-    .formulario input, .formulario textarea, .formulario select {
+    .card {
       width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .formulario button {
-      margin-top: 20px;
-      padding: 12px;
-      background: #00695c;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 1em;
-    }
-    footer {
-      background: #004d40;
-      color: white;
+      max-width: 720px;
+      background: rgba(12, 28, 38, 0.7);
+      backdrop-filter: blur(6px);
+      border: 1px solid #123c4f;
+      border-radius: 16px;
+      padding: 28px;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+    }
+    .logo {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid #145265;
+      color: var(--muted);
+      font-weight: 600;
+      letter-spacing: 0.2px;
+    }
+    h1 {
+      margin: 18px 0 8px;
+      font-size: 30px;
+      line-height: 1.3;
+    }
+    p {
+      margin: 10px 0 18px;
+      color: var(--muted);
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0, 184, 148, 0.12);
+      color: var(--accent);
+      border: 1px solid rgba(0, 184, 148, 0.45);
+      padding: 10px 14px;
+      border-radius: 12px;
+      font-weight: 600;
+      margin: 10px 0 16px;
+    }
+    .pulse {
+      width: 10px; height: 10px; border-radius: 999px; background: var(--accent);
+      box-shadow: 0 0 0 0 rgba(0,184,148,0.6); animation: pulse 1.8s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(0,184,148,0.5); }
+      70% { box-shadow: 0 0 0 12px rgba(0,184,148,0); }
+      100% { box-shadow: 0 0 0 0 rgba(0,184,148,0); }
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #8fa7bb;
     }
   </style>
 </head>
 <body>
+  <main class="card" role="main" aria-label="Página em construção">
+    <span class="logo">Visit Península de Maraú</span>
+    <h1>Estamos preparando uma transformação</h1>
+    <p>Em breve, a Península de Maraú ganhará um novo cenário: mais visibilidade, mais oportunidades e um futuro que valoriza cada detalhe da nossa terra.</p>
 
-  <header>
-    <h1>Visit Península de Maraú</h1>
-    <p>Onde a natureza encontra a alma</p>
-  </header>
-
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#empresarios">Empresários</a>
-    <a href="#eventos">Eventos</a>
-    <a href="#contato">Contato</a>
-  </nav>
-
-  <section id="sobre">
-    <h2>✨ Sobre a Península</h2>
-    <p>A Península de Maraú é um dos destinos mais encantadores do Brasil — praias paradisíacas, cultura vibrante, gastronomia autêntica e uma comunidade acolhedora. Este portal promove a região como destino turístico nacional e internacional, valorizando cada negócio local que faz parte dessa experiência.</p>
-  </section>
-
-  <section id="empresarios">
-    <h2>🤝 Empresários Locais</h2>
-    <p>Se você é dono de pousada, restaurante, loja, mercado, agência de turismo ou qualquer outro negócio na Península de Maraú, este projeto é para você. Cadastre-se e faça parte da rede!</p>
-
-    <div class="formulario">
-      <form>
-        <label>Nome do Estabelecimento</label>
-        <input type="text" name="nome" required>
-
-        <label>Tipo de Negócio</label>
-        <select name="tipo">
-          <option>Pousada</option>
-          <option>Restaurante</option>
-          <option>Loja</option>
-          <option>Mercado</option>
-          <option>Agência de Turismo</option>
-          <option>Outro</option>
-        </select>
-
-        <label>Localização</label>
-        <input type="text" name="localizacao">
-
-        <label>Responsável</label>
-        <input type="text" name="responsavel">
-
-        <label>Telefone / WhatsApp</label>
-        <input type="text" name="telefone">
-
-        <label>E-mail</label>
-        <input type="email" name="email">
-
-        <label>Redes Sociais / Site</label>
-        <input type="text" name="redes">
-
-        <label>Descrição do Negócio</label>
-        <textarea name="descricao"></textarea>
-
-        <label>Serviços Oferecidos</label>
-        <input type="text" name="servicos">
-
-        <label>Faixa de Preço</label>
-        <select name="preco">
-          <option>Econômico</option>
-          <option>Médio</option>
-          <option>Alto Padrão</option>
-        </select>
-
-        <label>Público-Alvo</label>
-        <input type="text" name="publico">
-
-        <button type="submit">Enviar Cadastro</button>
-      </form>
+    <div class="badge">
+      <span class="pulse" aria-hidden="true"></span>
+      Em construção — uma nova era está chegando
     </div>
-  </section>
 
-  <section id="eventos">
-    <h2>📅 Agenda de Eventos</h2>
-    <p>Em breve: calendário com festas locais, feiras culturais e celebrações da Península de Maraú.</p>
-  </section>
-
-  <section id="contato">
-    <h2>📩 Contato</h2>
-    <p>Quer saber mais sobre o projeto? Entre em contato pelo e-mail: <strong>contato@visitpeninsulademarau.com</strong></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Visit Península de Maraú — Todos os direitos reservados</p>
-  </footer>
-
+    <div class="footer">© 2025 Visit Península de Maraú — Todos os direitos reservados</div>
+  </main>
 </body>
 </html>
